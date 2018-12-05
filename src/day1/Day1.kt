@@ -10,16 +10,15 @@ fun main(args: Array<String>) {
 }
 
 /**
- * Map list to integers and return their sum
- */
-fun part1(): Int = input.sum()
-
-/**
  * Returns a new BufferedReader for reading the contents of the file.
  * Once we have a BufferedReader, we can read all the lines in it
  */
 fun readFile(fileName: String): List<String> = File("src/day1/$fileName").bufferedReader().readLines()
 
+/**
+ * Map list to integers and return their sum
+ */
+fun part1(): Int = input.sum()
 
 /**
  * Infinitely loops through input list and adds currentFrequency in
