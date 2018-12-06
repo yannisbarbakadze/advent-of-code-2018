@@ -38,9 +38,9 @@ fun part1(): Int {
 }
 
 /**
- *  Using a nested for loop compare all string with each other.
+ *  Using a nested for loop compare all strings with each other.
  *  [CommonLetters] is going to hold all the common letters between those compared
- *  If [CommonLetters] length will be equal to the strings length - 1 means they only have one different
+ *  Return [CommonLetters] if length will be equal to the strings length - 1 which means they only have one different
  */
 fun part2(): String {
 
