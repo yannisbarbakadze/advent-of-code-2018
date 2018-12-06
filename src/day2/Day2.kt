@@ -6,6 +6,7 @@ private val input = readFile("input.txt")
 
 fun main(args: Array<String>) {
     println(part1())
+    println(part2())
 }
 
 /**
@@ -34,4 +35,22 @@ fun part1(): Int {
     }
 
     return appearedTwice * appearedThrice
+}
+
+/**
+ *  Using a nested for loop compare all string with each other.
+ *  [CommonLetters] is going to hold all the common letters between those compared
+ *  If [CommonLetters] length will be equal to the strings length - 1 means they only have one different
+ */
+fun part2(): String {
+
+    for (i in input.indices) {
+        for (j in (i + 1) until input.size) {
+            val commonLetters = input[i].filterIndexed { position, char -> input[j][position] == char }
+            if (commonLetters.length == input.first().length - 1) {
+                return commonLetters
+            }
+        }
+    }
+    throw IllegalArgumentException("No two IDs differ at exactly 1 position")
 }
