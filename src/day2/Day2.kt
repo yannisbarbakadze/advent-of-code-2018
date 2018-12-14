@@ -16,7 +16,7 @@ fun main(args: Array<String>) {
 fun readFile(fileName: String): List<String> = File("src/day2/$fileName").bufferedReader().readLines()
 
 /**
- * Loops through input, groups letters and returns the number of key/value pairs in the map
+ * Loops through input.txt, groups letters and returns the number of key/value pairs in the map
  */
 fun part1(): Int {
     var appearedTwice = 0

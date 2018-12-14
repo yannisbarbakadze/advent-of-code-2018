@@ -2,7 +2,7 @@ package day1
 
 import java.io.File
 
-private val input = readFile("input.txt").map { it.toInt() }
+private val input = readFile("input.txt.txt").map { it.toInt() }
 
 fun main(args: Array<String>) {
     println(part1())
@@ -21,7 +21,7 @@ fun readFile(fileName: String): List<String> = File("src/day1/$fileName").buffer
 fun part1(): Int = input.sum()
 
 /**
- * Infinitely loops through input list and adds currentFrequency in
+ * Infinitely loops through input.txt list and adds currentFrequency in
  * a set until it finds a frequency that is reached before
  */
 fun part2(): Int {
