@@ -2,7 +2,7 @@ package day1
 
 import java.io.File
 
-private val input = readFile("input.txt.txt").map { it.toInt() }
+private val input = readFile("input.txt").map { it.toInt() }
 
 fun main(args: Array<String>) {
     println(part1())
